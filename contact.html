@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Universty Monitor | Universty tracking for Better Education</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="./script.js" ></script> -->
+    <script src="https://kit.fontawesome.com/91930e373e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<section class="sub-header">
+<!-- =================================================section 1 navigation========================================== -->
+    <nav><a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fas fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="Showmenu()"></i>
+    </nav>
+<!-- =================================================section 2 Title========================================== -->
+    <h1>Contact Us</h1>
+
+</section>
+
+<!-- =================================================section 3 location========================================== -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16923.13591828971!2d39.2528696478323!3d8.53020648327188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b1f65036ecb0f%3A0x6babded8f5e67ef6!2sAdama!5e1!3m2!1sen!2set!4v1629916214450!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<!-- =================================================section 4 content========================================== -->
+<section class="contuct-us">
+    <div class="row">
+        <div class="contuct-col">
+            <div>
+                <i class="fas fa-home"></i>
+                <span>
+                    <h5>xyz Road , abc boulding</h5>
+                    <p>bole,wangary mole</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>
+                    <h5>+2519709876</h5>
+                    <p>Monday to Saturday 24/7</p>
+                </span>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <span>
+                    <h5>infobdu@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contuct-col">
+            <form action="form-hundler.php" method="POST">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="text"   name="subject" placeholder="Enter Your Subject" required>
+                <textarea  rows="8"  name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hello-btn red">send message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- =================================================section 5 Footer========================================== -->
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Learn How To Make A Complete Website Using HTML and CSS,<br> Complete HTML and
+        CSS Multiple Pages Website<br> Design Tutorial Step by Step
+    </p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-telegram"></i>
+    </div>
+    <p>Copy Right All rights are reserved <i class="fas fa-graduation-cap"></i></p>
+</section>
+
+<!-- =================================================section 6 script========================================== -->
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function Showmenu() {
+        navlinks.style.right = "0";
+    }
+    function hidemenu() {
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+
+
+</body>
+
+</html>
